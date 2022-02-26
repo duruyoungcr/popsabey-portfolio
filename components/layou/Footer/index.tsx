@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer}>
                 <p>Designed by me (Jaykay Inspired)</p>
-                <p>DEVELOPED BY <a target="_blank" href="http://dycr.dev"> RAY</a></p>
+                <p>DEVELOPED BY <a target="_blank" href="http://dycr.dev" rel="noreferrer"> RAY</a></p>
             </div>
         </footer>
     )
