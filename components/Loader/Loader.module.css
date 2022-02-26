@@ -1,0 +1,10 @@
+.container {
+  @apply w-screen h-screen fixed z-50 top-0 left-0 bg-black;
+}
+.loader {
+  @apply flex items-center justify-center w-full h-full;
+}
+.title {
+  font-family: "Monoton", cursive;
+  @apply text-4xl  text-white-light;
+}
