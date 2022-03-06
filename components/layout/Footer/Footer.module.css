@@ -1,0 +1,32 @@
+.container {
+  @apply px-20 lg:px-[120px] pt-5;
+}
+
+.contact {
+  background: linear-gradient(180deg, #030732 0%, #010424 100%);
+  @apply border border-black-light rounded-3xl mb-20;
+}
+.top {
+  @apply flex justify-between items-center mb-8;
+}
+.text {
+  @apply max-w-[679px] pt-14 pl-10 text-lg;
+}
+.title {
+  line-height: 77px;
+  @apply max-w-[329px] uppercase text-4xl mb-7;
+}
+.bottom {
+  @apply flex items-center justify-between pl-10 pb-5 pr-3;
+}
+.imgcontainer {
+  @apply pt-4;
+}
+.socials {
+  @apply flex items-center;
+}
+
+.footer {
+  font-family: "Bebas Neue", cursive;
+  @apply flex items-center justify-between border-t border-t-black-light py-[18px] px-20 lg:px-[120px];
+}
