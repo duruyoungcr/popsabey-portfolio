@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Monoton&family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: "Oswald", sans-serif;
   @apply bg-black text-white;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,11 +17,19 @@ a {
   text-decoration: none;
 }
 
+body {
+  padding-top: 101px;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Bebas Neue", cursive;
+}
+
+h6 {
+  font-family: "Inter", sans-serif;
 }
 
 * {
