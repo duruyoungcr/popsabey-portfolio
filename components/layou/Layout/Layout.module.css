@@ -1,7 +1,0 @@
-.container {
-  @apply flex flex-col w-full min-h-screen;
-}
-
-.main {
-  @apply flex-1;
-}
