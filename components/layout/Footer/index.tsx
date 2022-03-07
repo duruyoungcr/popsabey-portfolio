@@ -21,7 +21,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className={styles.imgcontainer}>
-                            <Image src={MEMOJI} width={341} height={341} alt='Memoji' />
+                            <Image src={MEMOJI} width={341} height={341} alt='Memoji' placeholder='blur' />
                         </div>
                     </div>
                     <div className={styles.bottom}>
