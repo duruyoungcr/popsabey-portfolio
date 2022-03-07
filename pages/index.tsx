@@ -1,10 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useContext, useEffect } from 'react'
-import Layout from '../components/layou/Layout'
+import Hero from '../components/home/Hero'
+import Projects from '../components/home/Projects'
+import Reviews from '../components/home/Reviews'
+import Sell from '../components/home/Sell'
+import SystemDesign from '../components/home/SystemDesign'
+import Writings from '../components/home/Writings'
+import Layout from '../components/layout/Layout'
 import Loader from '../components/Loader'
 import { LoadingContext } from '../context/LoadingContext'
-import styles from '../styles/Home.module.css'
 
 const Home: NextPage = (props) => {
   const { loading, setLoading } = useContext(LoadingContext)
@@ -29,7 +34,12 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-
+        <Hero />
+        <Sell />
+        <Projects />
+        <SystemDesign />
+        <Writings />
+        <Reviews />
       </Layout>
     </>
   )
