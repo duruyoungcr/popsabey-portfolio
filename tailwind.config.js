@@ -10,6 +10,7 @@ module.exports = {
     screens: {
       'xs': '450px',
       ...defaultTheme.screens,
+      'xxl': '1500px'
     },
     extend: {},
     colors: {
@@ -30,6 +31,9 @@ module.exports = {
       black: {
         DEFAULT: '#010424',
         light: '#0D1249',
+      },
+      yellow: {
+        DEFAULT: '#966B5A'
       }
     },
     fontFamily: {
