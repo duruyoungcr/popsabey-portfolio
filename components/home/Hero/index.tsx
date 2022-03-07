@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section className={styles.container}>
             <div className={styles.image}>
-                <Image src={HeroImage} alt="Memoji Hi" width={445} height={445} />
+                <Image src={HeroImage} alt="Memoji Hi" width={445} height={445} placeholder='blur' />
             </div>
             <div className={styles.text}>
                 <h1 className={styles.salute}>Hello, I am popsabey</h1>

@@ -16,7 +16,7 @@ const Header = ({ path }: HeaderPropTypes) => {
             <div className='flex items-center'>
                 <Link href={'/'}>
                     <a>
-                        <Image src={LOGO} layout={'fixed'} width={40} height={40} />
+                        <Image src={LOGO} layout={'fixed'} width={40} height={40} placeholder='blur' />
                     </a>
                 </Link>
                 <nav className={styles.nav}>
