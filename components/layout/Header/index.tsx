@@ -25,7 +25,7 @@ const Header = ({ path }: HeaderPropTypes) => {
                             About
                         </a>
                     </Link>
-                    <Link href={'/projects'}>
+                    <Link href={'/#projects'}>
                         <a className={`${styles.navLink} ${path === '/projects' && 'text-white-light'}`}>
                             Projects
                         </a>
