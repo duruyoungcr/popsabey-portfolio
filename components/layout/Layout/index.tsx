@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from '../Footer'
 import Header from '../Header'
 import styles from './Layout.module.css'
@@ -12,7 +12,7 @@ interface ChildrenProps {
 const Layout = ({ children }: ChildrenProps) => {
     const [path, setPath] = useState<string>('')
     const router = useRouter();
-    useLayoutEffect(() => {
+    useEffect(() => {
         setPath(router.pathname);
     }, [router.route])
     return (
