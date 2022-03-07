@@ -10,7 +10,7 @@ interface socialLinkPropTypes {
 
 const SocialLink = ({ href, name, width, height }: socialLinkPropTypes) => {
     return (
-        <a href={href} className='rounded-full mx-3 h-10 w-10 bg-blue-dark flex items-center justify-center'>
+        <a href={href} className={styles.link}>
             <img src={`/assets/img/socials/${name}.png`} width={width} height={height} alt={name} />
         </a>
     )
