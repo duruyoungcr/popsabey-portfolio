@@ -1,0 +1,7 @@
+.container {
+  @apply px-20 lg:px-[120px] mb-28;
+}
+.skills__list {
+  grid-template-columns: repeat(auto-fill, minmax(308px, 1fr));
+  @apply grid gap-6;
+}
