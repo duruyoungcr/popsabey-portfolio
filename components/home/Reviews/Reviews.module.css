@@ -1,5 +1,5 @@
 .container {
-  @apply px-20 lg:px-[120px] my-20;
+  @apply my-20;
 }
 .list {
   @apply grid grid-cols-2 gap-16 2xl:gap-24;

@@ -28,7 +28,7 @@ const Project = ({ title, desc, slug, live, blurDataURL }: ProjectPropsTypes) =>
             </div>
             <p className='mb-6 pr-10'>{desc}</p>
             {live ?
-                <CustomLink text='read case study' href={`/projects/${slug}`} />
+                <CustomLink text='read case study' href={`/project/${slug}`} />
                 :
                 <h4 className='text-yellow'>coming soon</h4>
             }

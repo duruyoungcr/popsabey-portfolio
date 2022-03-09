@@ -1,5 +1,5 @@
 .container {
-  @apply mx-20 lg:mx-[120px] mt-20 rounded-3xl border-[0.4px] border-black-light pl-10 pt-20 flex justify-between;
+  @apply mt-20 rounded-3xl border-[0.4px] border-black-light pl-10 pt-20 flex justify-between;
 }
 .texts {
   @apply pb-10 max-w-[470px] mr-20 xxl:mr-40;

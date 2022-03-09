@@ -15,7 +15,7 @@ const SystemDesign = () => {
                     lineHeight='leading-[67px]'
                 />
                 <p className='mb-10'>
-                    This study is a walkthrough on creating, documenting and mamaging a design sysfem(foundation design file) for projects and teams.
+                    This study is a walkthrough on creating, documenting and managing a design system(foundation design file) for projects and teams.
                 </p>
                 <CustomLink href={'/system-design'} text='read case study' />
             </div>

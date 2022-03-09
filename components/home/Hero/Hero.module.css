@@ -1,5 +1,5 @@
 .container {
-  @apply pt-[22px] flex items-center mx-auto max-w-max w-4/5 min-h-[445px] mb-20;
+  @apply pt-[54px] flex items-center mx-auto max-w-max min-h-[445px] mb-20;
 }
 .image {
   @apply mr-16;
