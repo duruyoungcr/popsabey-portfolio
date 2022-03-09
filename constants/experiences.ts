@@ -18,7 +18,7 @@ const experiences = [
     {
         timeline: "Aug 2020 - Dec 2020",
         company: "Kufuta Boom (Luanda, Angola)",
-        position: "Kufuta Boom (Luanda, Angola)",
+        position: "PRODUCT DESIGNER",
         type: "Past",
         future: false,
         recent: false,
