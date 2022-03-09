@@ -21,6 +21,7 @@ const ExperienceList = () => {
                         type={type}
                         future={future}
                         recent={recent}
+                        key={timeline}
                     />
                 ))}
             </div>
