@@ -16,7 +16,6 @@ const Home: NextPage = (props) => {
   const { loading, setLoading } = useContext(LoadingContext)
 
   useEffect(() => {
-    setLoading(true)
     const subscribe = setTimeout(() => {
       setLoading(false)
     }, 2000);
