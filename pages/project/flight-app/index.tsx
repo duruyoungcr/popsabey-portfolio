@@ -179,8 +179,8 @@ const FlightApp: NextPage = (props) => {
                             </div>
                         </div>
                         <div className='flex items-center justify-around mt-20'>
-                            <ProjectLink next={false} text='ANTLERS FLIGHT APP' href='/project/flight-app' />
-                            <ProjectLink next={true} text='INSURANCE APP' href='/project/insurance-syatem' />
+                            <ProjectLink next={false} text='CRYPTO APP' href='/project/crypto-app' />
+                            <ProjectLink next={true} text='DESIGN SYSTEM' href='/project/system-design' />
                         </div>
                     </div>
                 </div>
