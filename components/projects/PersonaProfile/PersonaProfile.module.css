@@ -1,0 +1,7 @@
+.imageContainer {
+  @apply min-h-full min-w-max;
+}
+.imageContainer span,
+.imageContainer img {
+  @apply min-h-full;
+}
