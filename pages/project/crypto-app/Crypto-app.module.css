@@ -1,0 +1,3 @@
+.container {
+  @apply pt-20 text-lg xxl:text-xl;
+}
