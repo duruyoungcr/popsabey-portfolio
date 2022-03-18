@@ -1,0 +1,7 @@
+.container {
+  @apply pt-20 text-lg xxl:text-xl;
+}
+
+.paragraph {
+  @apply mt-10;
+}

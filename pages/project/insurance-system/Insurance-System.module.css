@@ -1,0 +1,7 @@
+.container {
+  @apply pt-20 text-lg xxl:text-xl;
+}
+
+.imgContainer {
+  @apply my-16 w-full mx-auto;
+}
