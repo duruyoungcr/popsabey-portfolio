@@ -17,7 +17,7 @@ const SystemDesign = () => {
                 <p className='mb-10'>
                     This study is a walkthrough on creating, documenting and managing a design system(foundation design file) for projects and teams.
                 </p>
-                <CustomLink href={'/system-design'} text='read case study' />
+                <CustomLink href={'/project/system-design'} text='read case study' />
             </div>
             <div className={styles.imgcontainer}>
                 <Image src={systemImage} width={590} height={524} layout='responsive' alt='system design' placeholder='blur' />
