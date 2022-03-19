@@ -84,7 +84,7 @@ const CryptoApp: NextPage = (props) => {
                             </p>
                         </div>
                         <div className='mb-10'>
-                            <BadgeHeading text='RESEARCH / Interview' />
+                            <BadgeHeading text='Persona' />
                             <div className='my-14'>
                                 <PersonaProfile
                                     name='ella adebola'
@@ -157,12 +157,12 @@ const CryptoApp: NextPage = (props) => {
                             </div>
                             <p className='mt-16 text-center'>
                                 To read the extensive medium case study, click {' '}
-                                <a className='text-blue underline' href="http://">here.</a>
+                                <a className='text-blue underline' href="https://medium.com">here</a>
                             </p>
                         </div>
                         <div className='flex items-center justify-around mt-20'>
-                            <ProjectLink next={false} text='CRYPTO APP' href='/project/crypto-app' />
-                            <ProjectLink next={true} text='DESIGN SYSTEM' href='/project/system-design' />
+                            <ProjectLink next={false} text='INSURANCE SYSTEM' href='/project/insurance-system' />
+                            <ProjectLink next={true} text='FLIGHT APP' href='/project/flight-app' />
                         </div>
                     </div>
                 </div>
