@@ -1,32 +1,31 @@
 .container {
-  @apply px-20 lg:px-[120px] pt-5 scroll-m-24;
+  @apply px-5 sm:px-20 lg:px-[120px] pt-5 scroll-m-24;
 }
 
 .contact {
   background: linear-gradient(180deg, #030732 0%, #010424 100%);
-  @apply border border-black-light rounded-3xl mb-20;
+  @apply border border-black-light rounded-3xl mb-11 sm:mb-20;
 }
 .top {
-  @apply flex justify-between items-center mb-8;
+  @apply flex justify-between items-center mb-4 sm:mb-8;
 }
 .text {
-  @apply max-w-[679px] pt-14 pl-10 text-lg;
+  @apply max-w-[679px] p-4 sm:p-0 sm:pt-14 sm:pl-10 font-light sm:text-lg leading-7;
 }
 .title {
-  line-height: 77px;
-  @apply max-w-[329px] uppercase text-4xl mb-7;
+  @apply max-w-[165px] sm:max-w-[329px] uppercase text-2xl sm:text-4xl mb-4 sm:mb-7 sm:leading-[77px] leading-[40px];
 }
 .bottom {
-  @apply flex items-center justify-between pl-10 pb-5 pr-3;
+  @apply flex flex-col sm:flex-row sm:items-center justify-between px-4 sm:pl-10 pb-5 sm:pr-3;
 }
 .imgcontainer {
-  @apply pt-4;
+  @apply pt-4 hidden sm:block;
 }
 .socials {
-  @apply flex items-center;
+  @apply flex items-center mt-6 sm:mt-0;
 }
 
 .footer {
   font-family: "Bebas Neue", cursive;
-  @apply flex flex-col sm:flex-row sm:items-center justify-between border-t border-t-black-light py-[18px] px-20 lg:px-[120px];
+  @apply flex flex-col sm:flex-row sm:items-center justify-between border-t border-t-black-light py-[18px] px-5 sm:px-20 lg:px-[120px];
 }

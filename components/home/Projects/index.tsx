@@ -1,12 +1,23 @@
 import projects from '../../../constants/projects'
 import CustomHeading from '../../general/CustomHeading'
 import Project from '../Project'
+import SystemDesign from '../SystemDesign'
 import styles from './Projects.module.css'
 
 const Projects = () => {
     return (
         <section className={styles.container} id='projects'>
-            <CustomHeading text='some of my work' fontSize='text-4xl' marginBottom='mb-10' />
+            <CustomHeading text='some of my work' fontSize='text-2xl sm:text-4xl' marginBottom='mb-3 sm:mb-10' />
+            <p className='sm:text-lg w-3/4 sm:w-full leading-7 mb-8'>Please visit my {' '}
+                <a
+                    href="https://behance.com/popsabey"
+                    className='underline-offset-2 underline text-blue'
+                >
+                    behance profile
+                </a>
+                {' '} to view my latest/updated projects
+            </p>
+            <SystemDesign />
             <div className={styles.list}>
                 {projects.map(project => (
                     <Project

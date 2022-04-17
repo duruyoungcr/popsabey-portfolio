@@ -23,10 +23,10 @@ const Project = ({ title, desc, slug, live, blurDataURL }: ProjectPropsTypes) =>
             <div className={styles.imageContainer}>
                 <Image src={`${imageBasePath + slug}.png`} width={550} height={330} alt={title} placeholder='blur' blurDataURL={blurDataURL} />
             </div>
-            <div className='max-w-[343px] pr-10'>
-                <CustomHeading text={title} fontSize="text-[40px]" marginBottom='mb-4' />
+            <div className='max-w-[360px]'>
+                <CustomHeading text={title} fontSize="text-xl sm:text-[40px]" marginBottom='mb-2 sm:mb-4' />
             </div>
-            <p className='mb-6 pr-10'>{desc}</p>
+            <p className='mb-4 sm:mb-6 font-light leading-7 pr-10'>{desc}</p>
             {live ?
                 <CustomLink text='read case study' href={`/project/${slug}`} />
                 :

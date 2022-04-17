@@ -25,7 +25,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={styles.bottom}>
-                        <CustomLink href={'mailto:popsabey@gmail.com'} text='send a message' />
+                        <CustomLink href={'mailto:popsabey.ux@gmail.com'} text='send a message' />
                         <div className={styles.socials}>
                             {socials.map((social, index) => (
                                 <SocialLink href={social.href} key={index} name={social.name} width={social.width} height={social.height} />
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer}>
                 <p>Designed by me (Jaykay Inspired)</p>
-                <p>DEVELOPED BY <a target="_blank" href="http://dycr.dev" rel="noreferrer"> RAY</a></p>
+                <p>DEVELOPED BY <a target="_blank" href="http://dycr.dev" rel="noreferrer" className='text-blue'> RAY</a></p>
             </div>
         </footer>
     )

@@ -1,9 +1,9 @@
 .card {
-  @apply max-w-[590px] pl-10 pb-10 rounded-3xl border-[0.4px] border-black-light transition-all duration-500 ease-in-out hover:shadow hover:shadow-black-light;
+  @apply max-w-[590px] pl-5 pb-4 sm:pl-10 sm:pb-10 rounded-3xl border-[0.4px] border-black-light transition-all duration-500 ease-in-out hover:shadow hover:shadow-black-light;
 }
 
 .imageContainer {
-  @apply overflow-hidden rounded-bl-3xl mb-8 rounded-tr-3xl;
+  @apply overflow-hidden rounded-bl-3xl mb-4 sm:mb-8 rounded-tr-3xl;
 }
 .imageContainer span {
   @apply rounded-bl-3xl rounded-tr-3xl;

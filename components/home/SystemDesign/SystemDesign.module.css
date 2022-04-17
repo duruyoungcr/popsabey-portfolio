@@ -1,11 +1,11 @@
 .container {
-  @apply mt-20 rounded-3xl border-[0.4px] border-black-light pl-10 pt-20 flex justify-between;
+  @apply mb-12 sm:mb-20 rounded-3xl border-[0.4px] border-black-light sm:pl-10 sm:pt-20 flex flex-col sm:flex-row justify-between;
 }
 .texts {
-  @apply pb-10 max-w-[470px] mr-20 xxl:mr-40;
+  @apply p-5 sm:p-0 sm:pb-10 max-w-[470px] sm:mr-20 xxl:mr-40;
 }
 .imgcontainer {
-  @apply rounded-l-3xl self-end w-2/5 h-[524px] overflow-hidden block;
+  @apply rounded-l-3xl sm:self-end w-full mb-5 sm:mb-0 sm:max-w-[590px] h-[228px] sm:h-[524px] overflow-hidden block -order-1 sm:order-1;
 }
 .imgContainer span,
 .imgContainer img {

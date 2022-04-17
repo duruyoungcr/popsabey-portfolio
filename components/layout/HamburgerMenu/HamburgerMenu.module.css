@@ -3,7 +3,7 @@
 }
 
 .line {
-  @apply h-1 mb-2 bg-white transition-all duration-500 ease-in-out last-of-type:mb-0;
+  @apply h-0.5 mb-2 bg-white transition-all duration-500 ease-in-out last-of-type:mb-0;
 }
 .line:nth-child(2) {
   @apply w-10;

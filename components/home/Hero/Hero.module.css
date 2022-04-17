@@ -1,14 +1,17 @@
 .container {
-  @apply pt-[54px] flex items-center mx-auto max-w-max min-h-[445px] mb-20;
+  @apply pt-[54px] flex flex-col sm:flex-row items-center mx-auto max-w-max min-h-[445px] mb-20;
 }
 .image {
-  @apply mr-16;
+  @apply sm:mr-16 w-[120px] sm:w-auto h-[120px] sm:h-auto self-start mb-2 sm:mb-0;
+}
+.image span {
+  @apply w-full h-full;
 }
 .salute {
-  @apply text-blue text-4xl leading-[77px];
+  @apply text-blue text-2xl sm:text-4xl sm:leading-[77px];
 }
 .desc {
-  @apply mb-4 text-xl;
+  @apply mb-8 sm:mb-4 text-xl;
 }
 .link {
   @apply text-blue transition-all duration-300 ease-in-out hover:opacity-80;
