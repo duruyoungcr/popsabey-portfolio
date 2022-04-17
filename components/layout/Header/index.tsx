@@ -1,16 +1,22 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Header.module.css'
 import LOGO from '../../../public/logo.png'
 import Link from 'next/link'
 import socials from '../../../constants/socials'
 import SocialLink from '../../general/SocialLink'
+import HamburgerMenu from '../HamburgerMenu'
+import MobileMenu from '../MobileMenu'
 
 interface HeaderPropTypes {
     path: string,
 }
 
 const Header = ({ path }: HeaderPropTypes) => {
+    const [toggle, setToggle] = useState(false)
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
     return (
         <header className={styles.container}>
             <div className='flex items-center'>
@@ -35,7 +41,7 @@ const Header = ({ path }: HeaderPropTypes) => {
                             UIs
                         </a>
                     </Link>
-                    <Link href={'/contact'}>
+                    <Link href={`${path}#contact`}>
                         <a className={`${styles.navLink} ${path === '/contact' && 'text-white-light'}`}>
                             Contact Me
                         </a>
@@ -46,6 +52,10 @@ const Header = ({ path }: HeaderPropTypes) => {
                 {socials.map((social, index) => (
                     <SocialLink href={social.href} key={index} name={social.name} width={social.width} height={social.height} />
                 ))}
+            </div>
+            <div className='sm:hidden block'>
+                <HamburgerMenu toggle={toggle} handleToggle={handleToggle} />
+                {toggle && <MobileMenu path={path} handleToggle={handleToggle} />}
             </div>
         </header>
     )
