@@ -1,5 +1,5 @@
 .container {
-  @apply px-20 lg:px-[120px] pt-5;
+  @apply px-20 lg:px-[120px] pt-5 scroll-m-24;
 }
 
 .contact {
@@ -28,5 +28,5 @@
 
 .footer {
   font-family: "Bebas Neue", cursive;
-  @apply flex items-center justify-between border-t border-t-black-light py-[18px] px-20 lg:px-[120px];
+  @apply flex flex-col sm:flex-row sm:items-center justify-between border-t border-t-black-light py-[18px] px-20 lg:px-[120px];
 }

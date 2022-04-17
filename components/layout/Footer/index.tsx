@@ -9,7 +9,7 @@ import SocialLink from '../../general/SocialLink'
 const Footer = () => {
     return (
         <footer>
-            <div className={styles.container}>
+            <div className={styles.container} id="contact">
                 <div className={styles.contact}>
                     <div className={styles.top}>
                         <div className={styles.text}>
