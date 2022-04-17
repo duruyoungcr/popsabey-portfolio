@@ -40,7 +40,6 @@ const Home: NextPage = (props) => {
         <Hero />
         <Sell />
         <Projects />
-        <SystemDesign />
         <Writings />
         <Reviews />
       </Layout>
