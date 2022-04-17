@@ -1,5 +1,5 @@
 .container {
-  @apply mt-[83px];
+  @apply mt-[83px] scroll-m-32;
 }
 
 .list {
