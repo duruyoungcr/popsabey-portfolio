@@ -1,8 +1,8 @@
 .container {
-  @apply w-screen h-screen fixed z-50 top-0 left-0 bg-black;
+  @apply w-screen h-screen fixed z-50 top-0 left-0 bg-black flex items-center justify-center px-10;
 }
 .loader {
-  @apply flex items-center justify-center w-full h-full;
+  @apply w-4/5 h-full relative;
 }
 .title {
   font-family: "Monoton", cursive;

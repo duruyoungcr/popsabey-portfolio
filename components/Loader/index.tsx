@@ -1,12 +1,9 @@
 import React from 'react'
 import styles from './Loader.module.css'
 import { motion, AnimatePresence } from "framer-motion"
+import Image from 'next/image'
+import Loading from '../../public/assets/img/svg/loading.svg'
 
-const LoaderAnimationProps = {
-    initial: { opacity: 0, scale: 1.1 },
-    animate: { opacity: 1, scale: 1 },
-    transition: { duration: 0.3 },
-}
 const Loader = () => {
     return (
         <AnimatePresence>
@@ -15,12 +12,7 @@ const Loader = () => {
                 className={styles.container}
             >
                 <div className={styles.loader}>
-                    <motion.h1
-                        {...LoaderAnimationProps}
-                        className={`${styles.title} animate-pulse`}
-                    >
-                        popsabey
-                    </motion.h1>
+                    <Image src={Loading} alt='popsabey' layout='fill' />
                 </div>
             </motion.div>
         </AnimatePresence>
