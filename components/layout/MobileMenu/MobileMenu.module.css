@@ -12,3 +12,15 @@
 .socials {
   @apply flex items-center;
 }
+
+@media screen and (max-height: 680px) {
+  .container {
+    @apply py-5;
+  }
+}
+
+@media screen and (max-height: 575px) {
+  .navLink {
+    @apply mb-4;
+  }
+}

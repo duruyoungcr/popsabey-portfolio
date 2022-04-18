@@ -2,5 +2,11 @@
   @apply min-w-full min-h-full;
 }
 .link {
-  @apply rounded-full mx-3 h-10 w-10 bg-blue-dark flex items-center justify-center transition-all duration-300 ease-linear hover:bg-opacity-70;
+  @apply rounded-full mx-1 xs:mx-2 sm:mx-3 h-10 w-10 bg-blue-dark flex items-center justify-center transition-all duration-300 ease-linear hover:bg-opacity-70;
+}
+
+@media screen and (max-width: 450px) {
+  .link {
+    @apply first-of-type:ml-0 last-of-type:mr-0;
+  }
 }

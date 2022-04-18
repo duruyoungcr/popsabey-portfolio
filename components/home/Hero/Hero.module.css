@@ -8,7 +8,7 @@
   @apply w-full h-full;
 }
 .salute {
-  @apply text-blue text-2xl sm:text-4xl sm:leading-[77px];
+  @apply text-blue text-[40px] sm:text-4xl sm:leading-[77px];
 }
 .desc {
   @apply mb-8 sm:mb-4 text-xl;
