@@ -1,30 +1,30 @@
 const socials = [
     {
-        href: 'http://twitter.com/',
+        href: 'https://twitter.com/popsabey',
         name: 'twitter',
         width: '24',
         height: '19'
     },
     {
-        href: 'http://linkedin.com/in/',
+        href: 'https://linkedin.com/mwlite/in/abiodun-popoola-a6aa44191',
         name: 'linkedin',
         width: '19',
         height: '18'
     },
     {
-        href: 'http://instagram.com/',
+        href: 'https://instagram.com/popsabey',
         name: 'instagram',
         width: '20',
         height: '20'
     },
     {
-        href: 'http://behance.com/',
+        href: 'https://behance.net/popsabey',
         name: 'behance',
         width: '19',
         height: '12'
     },
     {
-        href: 'http://dribble.com/',
+        href: 'https://dribble.com/popsabey',
         name: 'dribble',
         width: '24',
         height: '24'
