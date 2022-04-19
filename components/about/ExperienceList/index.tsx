@@ -7,7 +7,7 @@ const ExperienceList = () => {
     return (
         <section className={styles.container}>
             <div className='flex mb-10 items-center'>
-                <CustomHeading text="EXPERIENCE" fontSize="text-3xl" marginBottom='mb-0' />
+                <CustomHeading text="EXPERIENCE" fontSize="text-2xl sm:text-3xl" marginBottom='mb-0' />
                 <a className='text-blue underline ml-4' href='https://'>
                     Download Full Resume.pdf
                 </a>

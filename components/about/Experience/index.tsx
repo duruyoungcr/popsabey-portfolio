@@ -17,7 +17,7 @@ const Experience = ({ timeline, company, position, type, future, recent }: Exper
             }}
             className={`border border-black-light rounded-2xl min-h-[223px] p-6 transition-all duration-500 ease-in-out ${!future && 'hover:-translate-y-6'} hover:shadow hover:shadow-blue-light`}
         >
-            <h4 className='mb-10 text-xl text-blue'>{type}{recent && '(recent)'}</h4>
+            <h4 className='mb-8 sm:mb-10 text-xl text-blue'>{type}{recent && '(recent)'}</h4>
             {future ?
                 <>
                     <p className='mb-2'>Exciting!</p>
