@@ -15,6 +15,7 @@ const Layout = ({ children }: ChildrenProps) => {
     const [path, setPath] = useState<string>('')
     const { loading } = useContext(LoadingContext)
     const router = useRouter();
+    const sectionId = router.asPath.slice(router.asPath.indexOf('#')) || '';
     useEffect(() => {
         setPath(router.pathname);
     }, [router.route])
@@ -25,7 +26,7 @@ const Layout = ({ children }: ChildrenProps) => {
     }
     return (
         <div className={styles.container}>
-            <Header path={path} />
+            <Header path={path} sectionId={sectionId} />
             <main className={styles.main}>
                 {children}
             </main>

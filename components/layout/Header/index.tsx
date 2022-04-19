@@ -10,9 +10,10 @@ import MobileMenu from '../MobileMenu'
 
 interface HeaderPropTypes {
     path: string,
+    sectionId?: string,
 }
 
-const Header = ({ path }: HeaderPropTypes) => {
+const Header = ({ path, sectionId }: HeaderPropTypes) => {
     const [toggle, setToggle] = useState(false)
     const handleToggle = () => {
         setToggle(!toggle)
@@ -32,7 +33,7 @@ const Header = ({ path }: HeaderPropTypes) => {
                         </a>
                     </Link>
                     <Link href={'/#projects'}>
-                        <a className={`${styles.navLink} ${path === '/projects' && 'text-white-light'}`}>
+                        <a className={`${styles.navLink} ${sectionId && sectionId === '#projects' && 'text-white-light'}`}>
                             Projects
                         </a>
                     </Link>
@@ -42,7 +43,7 @@ const Header = ({ path }: HeaderPropTypes) => {
                         </a>
                     </Link>
                     <Link href={`${path}#contact`}>
-                        <a className={`${styles.navLink} ${path === '/contact' && 'text-white-light'}`}>
+                        <a className={`${styles.navLink} ${sectionId && sectionId === '#contact' && 'text-white-light'}`}>
                             Contact Me
                         </a>
                     </Link>
