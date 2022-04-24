@@ -10,10 +10,10 @@
 }
 
 .socials {
-  @apply flex items-center;
+  @apply flex items-center justify-around w-full;
 }
 
-@media screen and (max-height: 680px) {
+@media screen and (max-height: 745px) {
   .container {
     @apply py-5;
   }
@@ -21,6 +21,6 @@
 
 @media screen and (max-height: 575px) {
   .navLink {
-    @apply mb-4;
+    @apply text-2xl;
   }
 }
