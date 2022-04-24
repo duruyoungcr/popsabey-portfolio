@@ -22,11 +22,11 @@ const PersonaProfile = ({ name, age, gender, role, summary, challenges, imageNam
             </div>
             <div className={`${inversed ? 'sm:order-1 sm:pl-[22px] sm:mr-14' : 'sm:pr-[22px] sm:ml-14'} flex flex-col justify-between text-lg min-h-full px-3 sm:px-0 py-10 sm:py-5`}>
                 <p className='capitalize'>{name} {' '} | {' '} {role}</p>
-                <div className='flex items-center text-lg xxl:text-xl'>
+                <div className='flex items-center text-lg xxl:text-xl mb-4 sm:mb-0'>
                     <p className='mr-6'>Age: {age}</p>
                     <p>Gender: {gender}</p>
                 </div>
-                <p>{summary}</p>
+                <p className='mb-4 sm:mb-0'>{summary}</p>
                 <p>Challenges/Needs</p>
                 <p>{challenges[0]}</p>
                 <p>{challenges[1]}</p>

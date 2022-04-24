@@ -3,5 +3,5 @@
 }
 .imageContainer span,
 .imageContainer img {
-  @apply min-h-full;
+  @apply min-h-full w-full object-contain;
 }
