@@ -15,7 +15,7 @@ const CustomLink = ({ href, text }: linkPropTypes) => {
             <a className={`${styles.link} group`}>
                 <p className="mr-8">{text}</p>
                 <div className='group-hover:visible'>
-                    <Image src={ARROW} width={6} height={12} />
+                    <Image src={ARROW} width={6} height={12} alt='arrow-right' />
                 </div>
             </a>
         </Link>

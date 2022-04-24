@@ -18,7 +18,7 @@ const Layout = ({ children }: ChildrenProps) => {
     const sectionId = router.asPath.slice(router.asPath.indexOf('#')) || '';
     useEffect(() => {
         setPath(router.pathname);
-    }, [router.route])
+    }, [router.route, router.pathname]);
     if (loading) {
         return (
             <Loader />
