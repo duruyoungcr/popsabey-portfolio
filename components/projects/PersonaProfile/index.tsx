@@ -16,11 +16,11 @@ interface PersonaProfilePropsTypes {
 
 const PersonaProfile = ({ name, age, gender, role, summary, challenges, imageName, inversed = false }: PersonaProfilePropsTypes) => {
     return (
-        <div className='bg-blue-darkest rounded-2xl max-h-[580px] flex justify-between'>
-            <div className={`${inversed && 'order-2'} ${styles.imageContainer}`}>
+        <div className='bg-blue-darkest rounded-2xl sm:max-h-[580px] flex flex-col sm:flex-row justify-between'>
+            <div className={`${inversed && 'sm:order-2'} ${styles.imageContainer}`}>
                 <Image src={BASE_IMAGE_PATH + imageName + '.png'} width={400} height={576} alt={'Person'} />
             </div>
-            <div className={`${inversed ? 'order-1 pl-[22px] mr-14' : 'pr-[22px] ml-14'} flex flex-col justify-between text-lg min-h-full py-5`}>
+            <div className={`${inversed ? 'sm:order-1 sm:pl-[22px] sm:mr-14' : 'sm:pr-[22px] sm:ml-14'} flex flex-col justify-between text-lg min-h-full px-3 sm:px-0 py-10 sm:py-5`}>
                 <p className='capitalize'>{name} {' '} | {' '} {role}</p>
                 <div className='flex items-center text-lg xxl:text-xl'>
                     <p className='mr-6'>Age: {age}</p>

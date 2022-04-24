@@ -1,7 +1,7 @@
 .container {
-  @apply pt-20 text-lg xxl:text-xl;
+  @apply pt-6 sm:pt-20 text-base sm:text-lg xxl:text-xl overflow-hidden;
 }
 
 .imgContainer {
-  @apply my-16 w-full mx-auto;
+  @apply my-8 sm:my-16 w-full mx-auto;
 }

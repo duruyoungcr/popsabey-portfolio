@@ -38,22 +38,22 @@ const CryptoApp: NextPage = (props) => {
                     <div className='mt-10 mb-16'>
                         <Image src={CoverImage} width={1272} height={908} alt={title} placeholder='blur' />
                     </div>
-                    <div className='mb-10'>
+                    <div className=' mb-9 sm:mb-10'>
                         <BadgeHeading text='PROJECT BRIEF' />
-                        <p className='mt-10'>
+                        <p>
                             With the rise in the use and adoption of cryptocurrencies as a valid digital currency. The entry level into cryptocurrency adoption or usage is still relatively low especially for people outside the technology industry. The aim is to target non technical people and to design a mobile solution that would imbibe them into the trading system.
                         </p>
                     </div>
-                    <div className='grid grid-cols-2 gap-12'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 gap-9 sm:gap-12'>
                         <div>
                             <BadgeHeading text='THE CHALLENGE' />
-                            <p className='mt-10'>
+                            <p>
                                 As crypto is a fairly new concept to people and many are trying to get a hang of it, the average cryptocurrency trading application in the market is rather ambiguous in it’s functionality thereby elongating the learning curve  in most of these app. This results to a drop and disinterest in the product and similar ones.
                             </p>
                         </div>
                         <div>
                             <BadgeHeading text='SOLUTION' />
-                            <p className='mt-10'>
+                            <p>
                                 The solution was to design an app that is user-centric in it’s approach in solving the challenge. A new solution focused simplifying the user experience and accomodating new users.
                             </p>
                         </div>
@@ -61,10 +61,10 @@ const CryptoApp: NextPage = (props) => {
                     <div className='my-16'>
                         <Image src={FrameImage} width={1338} height={785} alt={'Frame'} placeholder='blur' />
                     </div>
-                    <div className='max-w-[1056px] px-20 mx-auto mb-20 xxl:mb-24'>
+                    <div className='max-w-[1056px] sm:px-20 mx-auto sm:mb-20 xxl:mb-24'>
                         <div>
                             <BadgeHeading text='RESEARCH' />
-                            <p className='mt-10'>
+                            <p>
                                 Since there are a ton of similar apps on the market, it is important I take a critical look at what these products are doing well and where they fail short in the market.
                             </p>
                             <p className='mt-8'>
@@ -79,7 +79,7 @@ const CryptoApp: NextPage = (props) => {
                         </div>
                         <div className='mb-10'>
                             <BadgeHeading text='RESEARCH / Interview' />
-                            <p className='mt-10'>
+                            <p>
                                 Based on the targeted users, I conducted group user interview via online messaging platforms to understand user’s first hand knowledge on this industry and how this new product can help solve any challenges they might be encountering presently and to overcome any restrain in a potential user.
                             </p>
                         </div>
@@ -111,42 +111,47 @@ const CryptoApp: NextPage = (props) => {
                         </div>
                         <div className='mb-10'>
                             <BadgeHeading text='THE EXPERIENCE' />
-                            <p className='mt-10'>
+                            <p>
                                 Imagine the average crypto trading and exchange platform, now more optimized and personalized.
                             </p>
-                            <div className="flex items-center mt-10 mb-16">
+                            <div className="flex flex-col sm:flex-row items-center mt-10 mb-14 sm:mb-16">
                                 <div className='mr-16 max-w-2xl'>
                                     <p>
-                                        Payment commitment are designed to be payed monthly to ease users affordability of the product and allow the company to track policy-activeness adequately.
+                                        First Time Using this app? There is a prompt to know your level of proficiency in crytocurrency in order to tailor the user experience.
                                     </p>
                                 </div>
-                                <div>
+                                <div className='-order-1 mb-2 sm:mb-0 sm:order-1'>
                                     <Image src={ExperienceImage} width={237} height={471} alt={title} placeholder='blur' />
                                 </div>
                             </div>
-                            <p className='text-center mb-10'>
-                                Simplifying the interface for non tech users to navigate easily, making things easily accessible and sectioning items into smaller units to avoid information overload for users.
-                            </p>
-                            <div className='mb-16'>
-                                <Image src={FrameTwoImage} width={874} height={519} alt={title} placeholder='blur' />
+                            <div className='flex flex-col'>
+                                <p className='sm:text-center mb-10'>
+                                    Simplifying the interface for non tech users to navigate easily, making things easily accessible and sectioning items into smaller units to avoid information overload for users.
+                                </p>
+                                <div className='-order-1 sm:order-1 mb-4 sm:mb-16'>
+                                    <Image src={FrameTwoImage} width={874} height={519} alt={title} placeholder='blur' />
+                                </div>
                             </div>
-                            <div className='grid grid-cols-3 gap-6 mb-16'>
+                            <div className='grid grid-cols-2 sm:grid-cols-3 gap-6 mb-10 sm:mb-16'>
                                 <div>
                                     <Image src={HomeImage} width={285} height={519} alt={title} placeholder='blur' />
                                 </div>
-                                <p className='flex items-center justify-center'>
+                                <p className='sm:flex hidden items-center justify-center'>
                                     Easily accessed notification system with simple ux writing.
                                 </p>
                                 <div>
                                     <Image src={TxnImage} width={285} height={519} alt={title} placeholder='blur' />
                                 </div>
+                                <p className='sm:hidden block col-span-2'>
+                                    Easily accessed notification system with simple ux writing.
+                                </p>
                             </div>
                             <div>
-                                <p className='mb-12'>Other screens</p>
-                                <div className='mx-auto max-w-max mb-2'>
+                                <p className='mb-2 sm:mb-12'>Other screens</p>
+                                <div className='mx-auto max-w-max sm:mb-2'>
                                     <Image src={CoverImage} width={630} height={457} alt={title} placeholder='blur' />
                                 </div>
-                                <div className='grid grid-cols-2 gap-4'>
+                                <div className='grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-4'>
                                     <div>
                                         <Image src={OneImage} width={585} height={457} alt={title} placeholder='blur' />
                                     </div>
@@ -155,12 +160,12 @@ const CryptoApp: NextPage = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <p className='mt-16 text-center'>
+                            <p className='mt-8 sm:mt-16 text-center'>
                                 To read the extensive medium case study, click {' '}
                                 <a className='text-blue underline' href="https://medium.com">here</a>
                             </p>
                         </div>
-                        <div className='flex items-center justify-around mt-20'>
+                        <div className='flex items-center justify-between sm:justify-around mt-16 sm:mt-20'>
                             <ProjectLink next={false} text='INSURANCE SYSTEM' href='/project/insurance-system' />
                             <ProjectLink next={true} text='FLIGHT APP' href='/project/flight-app' />
                         </div>

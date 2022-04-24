@@ -8,17 +8,32 @@ interface ProjectOutlinePropsTypes {
 
 const ProjectOutline = ({ year, role, platform, industry, duration }: ProjectOutlinePropsTypes) => {
     return (
-        <div className='py-4 px-4 rounded-lg bg-blue-darkest border border-blue-light text-white-darkest text-lg grid grid-cols-3 max-w-[754px]'>
-            <div>
-                <p className='mb-4'>Year: {year}</p>
-                <p>Platform: {platform}</p>
+        <div className='py-4 px-4 rounded-lg bg-blue-darkest border border-blue-light text-white-darkest text-lg sm:grid sm:grid-cols-3 flex items-center sm:items-start justify-between gap-6 max-w-full sm:max-w-[754px] overflow-x-scroll sm:overflow-hidden hide-scrollbar'>
+            <div className='flex sm:flex-col gap-6'>
+                <div className='sm:mb-4 flex min-w-max'>
+                    <p>Year:{' '} </p>
+                    <p className='ml-1 sm:ml-2'>{' '}{year}</p>
+                </div>
+                <div className='sm:mb-4 flex min-w-max'>
+                    <p>Platform:</p>
+                    <p className='ml-1'>{platform}</p>
+                </div>
             </div>
-            <div>
-                <p className='mb-4'>Industry: {industry}</p>
-                <p>Duration: {duration}</p>
+            <div className='flex sm:flex-col gap-6'>
+                <div className='sm:mb-4 flex min-w-max'>
+                    <p>Industry:</p>
+                    <p className='ml-1 sm:ml-2'>{industry}</p>
+                </div>
+                <div className='sm:mb-4 flex min-w-max'>
+                    <p>Duration:</p>
+                    <p className='ml-1 sm:ml-2'>{duration}</p>
+                </div>
             </div>
-            <div className='text-right'>
-                <p className='mb-4'>Role: {role}</p>
+            <div className='text-right flex sm:flex-col gap-6'>
+                <div className='sm:mb-4 flex min-w-max'>
+                    <p>Role:</p>
+                    <p className='ml-1 sm:ml-2'>{role}</p>
+                </div>
             </div>
         </div>
     )

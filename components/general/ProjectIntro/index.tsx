@@ -13,9 +13,9 @@ interface ProjectIntroPropsTypes {
 
 const ProjectIntro = ({ year, role, platform, industry, duration, title, description }: ProjectIntroPropsTypes) => {
     return (
-        <div className='w-[754px]'>
-            <CustomHeading text={title} fontSize="text-3xl" marginBottom="mb-6" lineHeight="leading-[77px]" />
-            <p className='text-white-lightest mb-6'>{description}</p>
+        <div className='sm:w-[754px]'>
+            <CustomHeading text={title} fontSize="text-2xl sm:text-3xl" marginBottom="mb-6" lineHeight="leading-[38px] sm:leading-[77px]" />
+            <p className='text-white-lightest mb-6 font-light'>{description}</p>
             <ProjectOutline
                 year={year}
                 role={role}

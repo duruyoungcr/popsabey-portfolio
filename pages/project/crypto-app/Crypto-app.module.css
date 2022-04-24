@@ -1,3 +1,3 @@
 .container {
-  @apply pt-20 text-lg xxl:text-xl;
+  @apply pt-6 sm:pt-20 text-base sm:text-lg xxl:text-xl overflow-hidden;
 }
