@@ -31,7 +31,7 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
             >
-                <Link href={'/about'} >
+                <Link href={'/about'} passHref>
                     <motion.a
                         custom={1}
                         variants={variants}
@@ -42,7 +42,7 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                         About
                     </motion.a>
                 </Link>
-                <Link href={'/#projects'}>
+                <Link href={'/#projects'} passHref>
                     <motion.a
                         custom={2}
                         variants={variants}
@@ -54,7 +54,7 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                         Projects
                     </motion.a>
                 </Link>
-                <Link href={'/uis'}>
+                <Link href={'/uis'} passHref>
                     <motion.a
                         custom={3}
                         variants={variants}
@@ -65,7 +65,7 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                         UIs
                     </motion.a>
                 </Link>
-                <Link href={`${path}#contact`}>
+                <Link href={`${path}#contact`} passHref>
                     <motion.a
                         custom={4}
                         variants={variants}
@@ -87,8 +87,9 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                         animate='visible'
                         initial='hidden'
                         exit='exit'
+                        key={index}
                     >
-                        <SocialLink href={social.href} key={index} name={social.name} width={social.width} height={social.height} />
+                        <SocialLink href={social.href} name={social.name} width={social.width} height={social.height} />
                     </motion.div>
                 ))}
             </div>
