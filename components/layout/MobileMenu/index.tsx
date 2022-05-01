@@ -22,14 +22,14 @@ const variants = {
 const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => void }) => {
     return (
         <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             className={styles.container}
         >
             <motion.div
                 className={styles.nav}
-                initial={{ x: 100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
             >
                 <Link href={'/about'} passHref>
                     <motion.a

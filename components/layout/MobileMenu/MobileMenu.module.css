@@ -1,6 +1,6 @@
 .container {
   z-index: 99;
-  @apply px-8 py-20 fixed right-0 top-[88px] left-0 bottom-0 bg-blue-lightest transition-all duration-500 ease-in-out flex flex-col justify-between items-center;
+  @apply px-8 py-20 fixed right-0 top-[88px] left-0 bottom-0 bg-blue-lightest transition-all duration-300 ease-in-out flex flex-col justify-between items-center;
 }
 .nav {
   @apply flex flex-col items-center;
