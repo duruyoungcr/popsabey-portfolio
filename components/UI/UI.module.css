@@ -6,5 +6,5 @@
   @apply min-h-full min-w-full max-h-full object-cover overflow-hidden;
 }
 .container div > span img {
-  @apply min-h-full min-w-full object-cover transition-all duration-700 ease-in-out hover:scale-110;
+  @apply min-h-full min-w-full object-cover transition-all duration-700 ease-in-out sm:hover:scale-110;
 }
