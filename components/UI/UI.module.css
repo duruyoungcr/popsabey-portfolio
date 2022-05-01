@@ -1,0 +1,10 @@
+.container {
+  @apply py-10;
+}
+
+.container div > span {
+  @apply min-h-full min-w-full max-h-full object-cover overflow-hidden;
+}
+.container div > span img {
+  @apply min-h-full min-w-full object-cover transition-all duration-700 ease-in-out hover:scale-110;
+}

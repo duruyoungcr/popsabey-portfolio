@@ -10,7 +10,7 @@ const Projects = () => {
             <CustomHeading text='some of my work' fontSize='text-2xl sm:text-4xl' marginBottom='mb-3 sm:mb-10' />
             <p className='sm:text-lg w-3/4 sm:w-full leading-7 mb-8'>Please visit my {' '}
                 <a
-                    href="https://behance.com/popsabey"
+                    href="https://behance.net/popsabey"
                     className='underline-offset-2 underline text-blue'
                 >
                     behance profile
