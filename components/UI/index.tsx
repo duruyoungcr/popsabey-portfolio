@@ -16,7 +16,7 @@ const UI = () => {
     return (
         <div className={styles.container}>
             <p className='mb-10'>
-                Please visit my <a href="https://instagram.com/popsabey" target="_blank" className="text-blue mb-10 underline underline-offset-2"> instagram profile</a>  to view my latest/updated UI designs
+                Please visit my <a href="https://instagram.com/popsabey" target='_blank' rel="noreferrer" className="text-blue mb-10 underline underline-offset-2"> instagram profile</a>  to view my latest/updated UI designs
             </p>
             <div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-4 sm:mb-8'>

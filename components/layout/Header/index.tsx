@@ -56,7 +56,7 @@ const Header = ({ path, sectionId }: HeaderPropTypes) => {
             </div>
             <div className='sm:hidden block'>
                 <HamburgerMenu toggle={toggle} handleToggle={handleToggle} />
-                {toggle && <MobileMenu path={path} handleToggle={handleToggle} />}
+                {toggle && <MobileMenu path={path} handleToggle={handleToggle} sectionId={sectionId} />}
             </div>
         </header>
     )

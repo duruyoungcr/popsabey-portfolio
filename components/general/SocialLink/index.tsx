@@ -10,7 +10,7 @@ interface socialLinkPropTypes {
 
 const SocialLink = ({ href, name, width, height }: socialLinkPropTypes) => {
     return (
-        <a href={href} className={styles.link}>
+        <a href={href} target='_blank' rel="noreferrer" className={styles.link}>
             <img src={`/assets/img/socials/${name}.png`} width={width} height={height} alt={name} />
         </a>
     )

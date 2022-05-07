@@ -162,7 +162,7 @@ const CryptoApp: NextPage = (props) => {
                             </div>
                             <p className='mt-8 sm:mt-16 text-center'>
                                 To read the extensive medium case study, click {' '}
-                                <a className='text-blue underline' href="https://medium.com">here</a>
+                                <a className='text-blue underline' target='_blank' rel="noreferrer" href="https://medium.com">here</a>
                             </p>
                         </div>
                         <div className='flex items-center justify-between sm:justify-around mt-16 sm:mt-20'>

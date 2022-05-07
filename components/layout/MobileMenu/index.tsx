@@ -19,7 +19,7 @@ const variants = {
     }
 }
 
-const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => void }) => {
+const MobileMenu = ({ path, handleToggle, sectionId }: { path: string, handleToggle: () => void, sectionId: string | undefined }) => {
     return (
         <motion.div
             initial={{ y: 100, opacity: 0 }}
@@ -49,7 +49,7 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                         animate='visible'
                         initial='hidden'
                         onClick={handleToggle}
-                        className={`${styles.navLink} ${path === '/projects' && 'text-white-light'}`}
+                        className={`${styles.navLink} ${sectionId && sectionId === '#projects' && 'text-white-light'}`}
                     >
                         Projects
                     </motion.a>
@@ -73,7 +73,7 @@ const MobileMenu = ({ path, handleToggle }: { path: string, handleToggle: () => 
                         initial='hidden'
                         exit='exit'
                         onClick={handleToggle}
-                        className={`${styles.navLink} ${path === '/contact' && 'text-white-light'}`}
+                        className={`${styles.navLink} ${sectionId && sectionId === '#contact' && 'text-white-light'}`}
                     >
                         Contact Me
                     </motion.a>
