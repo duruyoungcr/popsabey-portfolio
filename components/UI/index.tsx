@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import UI1 from '../../public/assets/img/uis/1.png'
 import UI2 from '../../public/assets/img/uis/2.png'
 import UI3 from '../../public/assets/img/uis/3.png'
@@ -11,10 +12,11 @@ import UI9 from '../../public/assets/img/uis/9.png'
 import styles from './UI.module.css'
 
 const UI = () => {
+    const { scroll } = useLocomotiveScroll()
     return (
         <div className={styles.container}>
             <p className='mb-10'>
-                Please visit my <a href="https://instagram.com/popsabey" className="text-blue mb-10"> instagram profile</a>  to view my latest/updated UI designs
+                Please visit my <a href="https://instagram.com/popsabey" target="_blank" className="text-blue mb-10 underline underline-offset-2"> instagram profile</a>  to view my latest/updated UI designs
             </p>
             <div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mb-4 sm:mb-8'>

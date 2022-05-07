@@ -12,6 +12,7 @@ const Projects = () => {
                 <a
                     href="https://behance.net/popsabey"
                     className='underline-offset-2 underline text-blue'
+                    target="_blank"
                 >
                     behance profile
                 </a>

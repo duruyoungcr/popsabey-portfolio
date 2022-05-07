@@ -1,5 +1,7 @@
+import { useLocomotiveScroll } from "react-locomotive-scroll"
 
 const Skill = ({ title, description }: { title: string, description: string }) => {
+    const { scroll } = useLocomotiveScroll()
     return (
         <div
             style={{

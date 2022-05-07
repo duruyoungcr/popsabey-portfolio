@@ -19,7 +19,7 @@ import BadgeHeading from '../../../components/general/BadgeHeading'
 const FlightApp: NextPage = (props) => {
     const { year, role, platform, industry, duration, title, description } = flightApp
     return (
-        <>
+        <div data-scroll-section>
             <SEO title="Project | Flight App" />
             <Layout>
                 <div className={styles.container}>
@@ -38,7 +38,7 @@ const FlightApp: NextPage = (props) => {
                     <div className='mb-8 sm:mb-16'>
                         <BadgeHeading text='PROJECT BRIEF' />
                         <p>
-                            This project is was created to solve the challenge of offline flight booking, to bring the offline flight ticketing and reservation experience online, so bookings can be done at the comfort of travelers’ home.
+                            This project was created to solve the challenge of offline flight booking, to bring the offline flight ticketing and reservation experience online, so bookings can be done at the comfort of travelers’ home.
                         </p>
                     </div>
                     <div className='mb-8 sm:mb-16'>
@@ -57,7 +57,7 @@ const FlightApp: NextPage = (props) => {
                         <div className='mb-10'>
                             <BadgeHeading text='DESIGN PROCESS' />
                             <p>
-                                My approach to this project is something isn’t direcly linear like but something close to this:
+                                My approach to this project isn't something directly linear like this but it is something close to this:
                             </p>
                         </div>
                         <div>
@@ -164,7 +164,7 @@ const FlightApp: NextPage = (props) => {
                                     SCHEDULING FLIGHT
                                 </p>
                                 <p className='mt-2 sm:mt-8'>
-                                    Checking, reviewing and comfirming of upcoming travels are stored here. Solving of missed flight due to timin(change in travel time) led to the implemetation of a reminder/alarm system on the platform to remind users timings of scheduled flights.
+                                    Checking, reviewing and comfirming of upcoming travels are stored here. Solving of missed flight due to timing(change in travel time) led to the implemetation of a reminder/alarm system on the platform to remind users timings of scheduled flights.
                                 </p>
                                 <div className='my-10'>
                                     <Image src={TwoImage} width={1056} height={610} alt={title} placeholder='blur' />
@@ -187,7 +187,7 @@ const FlightApp: NextPage = (props) => {
                     </div>
                 </div>
             </Layout>
-        </>
+        </div>
     )
 }
 

@@ -8,15 +8,17 @@ import SEO from '../../components/layout/SEO'
 
 const About: NextPage = (props) => {
     return (
-        <>
+        <div data-scroll-section>
             <SEO title="About | Popsabey Portfolio" />
             <Layout>
-                <Hero />
-                <SkillSet />
-                <ExperienceList />
-                <Hobbies />
+                <div>
+                    <Hero />
+                    <SkillSet />
+                    <ExperienceList />
+                    <Hobbies />
+                </div>
             </Layout>
-        </>
+        </div>
     )
 }
 

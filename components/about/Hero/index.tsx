@@ -2,8 +2,10 @@ import Image from 'next/image'
 import styles from './Hero.module.css'
 import HeroImage from '../../../public/assets/img/memoji/hero.png'
 import Link from 'next/link'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Hero = () => {
+    const { scroll } = useLocomotiveScroll()
     return (
         <section className={styles.container}>
             <div className={styles.image}>

@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useContext, useEffect, useState } from 'react'
 import Hero from '../components/home/Hero'
 import Projects from '../components/home/Projects'
 import Reviews from '../components/home/Reviews'
 import Sell from '../components/home/Sell'
-import SystemDesign from '../components/home/SystemDesign'
 import Writings from '../components/home/Writings'
 import Layout from '../components/layout/Layout'
 import SEO from '../components/layout/SEO'
@@ -34,7 +32,7 @@ const Home: NextPage = (props) => {
     return <Loader />
   }
   return (
-    <>
+    <div data-scroll-section>
       <SEO title="Popsabey | Product Designer" />
       <Layout>
         <Hero />
@@ -43,7 +41,7 @@ const Home: NextPage = (props) => {
         <Writings />
         <Reviews />
       </Layout>
-    </>
+    </div>
   )
 }
 

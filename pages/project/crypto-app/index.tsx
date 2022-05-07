@@ -22,7 +22,7 @@ import ProjectLink from '../../../components/general/ProjectLink'
 const CryptoApp: NextPage = (props) => {
     const { year, role, platform, industry, duration, title, description } = cryptoApp
     return (
-        <>
+        <div data-scroll-section>
             <SEO title="Project | Crypto Trading App" />
             <Layout>
                 <div className={styles.container}>
@@ -172,7 +172,7 @@ const CryptoApp: NextPage = (props) => {
                     </div>
                 </div>
             </Layout>
-        </>
+        </div>
     )
 }
 

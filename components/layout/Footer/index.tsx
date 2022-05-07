@@ -5,8 +5,10 @@ import MEMOJI from '../../../public/assets/img/memoji/footer.png'
 import CustomLink from '../../general/CustomLink'
 import socials from '../../../constants/socials'
 import SocialLink from '../../general/SocialLink'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Footer = () => {
+    const { scroll } = useLocomotiveScroll()
     return (
         <footer>
             <div className={styles.container} id="contact">

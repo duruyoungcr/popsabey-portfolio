@@ -23,7 +23,7 @@ const InsuranceSystem: NextPage = (props) => {
     const { year, role, platform, industry, duration, title, description } = insuranceApp
 
     return (
-        <>
+        <div data-scroll-section>
             <SEO title="Project | Insurance System" />
             <Layout>
                 <div className={styles.container}>
@@ -74,7 +74,7 @@ const InsuranceSystem: NextPage = (props) => {
                         <div className='mb-10 sm:mb-16'>
                             <Image src={ResearchImage} width={1060} height={751} alt={title} placeholder='blur' />
                             <p className='mt-4 sm:mt-10'>
-                                I got insight into platforms and solution not formally known to me and also the what our potential users think on the solution at hand.
+                                I got insight into platforms and solution not formerly known to me and also the what our potential users think on the solution at hand.
                             </p>
                         </div>
                         <div className='mb-10 sm:mb-16'>
@@ -162,7 +162,7 @@ const InsuranceSystem: NextPage = (props) => {
                     </div>
                 </div>
             </Layout>
-        </>
+        </div>
     )
 }
 

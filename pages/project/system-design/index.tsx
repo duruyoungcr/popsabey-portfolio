@@ -17,7 +17,7 @@ import ProjectLink from '../../../components/general/ProjectLink'
 const SystemDesign: NextPage = (props) => {
     const { year, role, platform, industry, duration, title, description } = designSystem
     return (
-        <>
+        <div data-scroll-section>
             <SEO title="Project | Design System" />
             <Layout>
                 <div className={styles.container}>
@@ -159,10 +159,10 @@ const SystemDesign: NextPage = (props) => {
                             We must continue to work on the system and the foundation to the team’s products to constantly adapt it to the brand’s direction.
                         </p>
                         <p className='mt-8'>
-                            This project only covers the internal collaboration part of a design system for the design team, none for the engineering team and none of the external usex. We must ensure to make provision also for future collaborations, partnership and platform adoption plus usage. The work continues..
+                            This project only covers the internal collaboration part of a design system for the design team, none for the engineering team and none of the external users. We must ensure to make provision also for future collaborations, partnership and platform adoption plus usage. The work continues..
                         </p>
                         <p className='mt-8 text-base xxl:text-lg'>
-                            View public figma file <a className='text-blue underline' href='http://figma.com'>here</a>
+                            View public figma file <a className='text-blue underline' target='_blank' href='http://figma.com'>here</a>
                         </p>
                         <p className='mt-8'>
                             THANK YOU.
@@ -174,7 +174,7 @@ const SystemDesign: NextPage = (props) => {
                     </div>
                 </div>
             </Layout>
-        </>
+        </div>
     )
 }
 

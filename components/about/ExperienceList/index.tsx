@@ -2,8 +2,10 @@ import styles from './ExperienceList.module.css'
 import CustomHeading from '../../general/CustomHeading'
 import experiences from '../../../constants/experiences'
 import Experience from '../Experience'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const ExperienceList = () => {
+    const { scroll } = useLocomotiveScroll()
     return (
         <section className={styles.container}>
             <div className='flex mb-10 items-center'>

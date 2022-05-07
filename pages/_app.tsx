@@ -1,14 +1,17 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { AnimatePresence } from "framer-motion";
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import { LoadingContext } from '../context/LoadingContext';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+
 
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const [loading, setLoading] = useState<boolean>(false)
+  const containerRef = useRef(null)
   const handleLoading = (loading: boolean) => {
     setLoading(loading);
   }
@@ -28,13 +31,25 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off('routeChangeComplete', handleComplete)
     }
   }, [router.events])
-
   return (
-    <AnimatePresence exitBeforeEnter>
-      <LoadingContext.Provider value={{ loading, setLoading: handleLoading }}>
-        <Component {...pageProps} />
-      </LoadingContext.Provider>
-    </AnimatePresence>
+    <LocomotiveScrollProvider
+      options={
+        {
+          smooth: true,
+          // ... all available Locomotive Scroll instance options 
+        }
+      }
+      watch={[router.asPath]}
+      containerRef={containerRef}
+    >
+      <AnimatePresence exitBeforeEnter>
+        <LoadingContext.Provider value={{ loading, setLoading: handleLoading }}>
+          <div ref={containerRef} data-scroll-container>
+            <Component {...pageProps} />
+          </div>
+        </LoadingContext.Provider>
+      </AnimatePresence>
+    </LocomotiveScrollProvider>
   )
 }
 

@@ -1,7 +1,9 @@
 import React from 'react'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import BadgeHeading from '../../general/BadgeHeading'
 
 const Hobbies = () => {
+    const { scroll } = useLocomotiveScroll()
     return (
         <section className='mb-20'>
             <BadgeHeading text="HOBBIES & LIKES" />
