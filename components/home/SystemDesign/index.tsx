@@ -14,7 +14,7 @@ const SystemDesign = () => {
                     fontSize='text-xl sm:text-[56px]'
                     lineHeight='sm:leading-[67px]'
                 />
-                <p className='mb-4 sm:mb-10'>
+                <p className='mb-4 sm:mb-10' data-aos='fade-up'>
                     This study is a walkthrough on creating, documenting and managing a design system(foundation design file) for projects and teams.
                 </p>
                 <CustomLink href={'/project/system-design'} text='read case study' />

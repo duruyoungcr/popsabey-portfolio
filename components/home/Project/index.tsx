@@ -27,11 +27,11 @@ const Project = ({ title, desc, slug, live, blurDataURL }: ProjectPropsTypes) =>
             <div className='max-w-[360px]'>
                 <CustomHeading text={title} fontSize="text-xl sm:text-[40px]" marginBottom='mb-2 sm:mb-4' />
             </div>
-            <p className='mb-4 sm:mb-6 font-light leading-7 pr-10'>{desc}</p>
+            <p data-aos='fade-up' className='mb-4 sm:mb-6 font-light leading-7 pr-10'>{desc}</p>
             {live ?
                 <CustomLink text='read case study' href={`/project/${slug}`} />
                 :
-                <h4 className='text-yellow'>coming soon</h4>
+                <h4 data-aos='fade-up' className='text-yellow'>coming soon</h4>
             }
         </div>
     )

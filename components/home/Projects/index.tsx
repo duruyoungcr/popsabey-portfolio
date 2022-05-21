@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <section className={styles.container} id='projects'>
             <CustomHeading text='some of my work' fontSize='text-2xl sm:text-4xl' marginBottom='mb-3 sm:mb-10' />
-            <p data-aos='fade-right' className='sm:text-lg w-3/4 sm:w-full leading-7 mb-8'>Please visit my {' '}
+            <p data-aos='fade-up' data-aos-delay='100' className='sm:text-lg w-3/4 sm:w-full leading-7 mb-8'>Please visit my {' '}
                 <a
                     href="https://behance.net/popsabey"
                     className='underline-offset-2 underline text-blue'

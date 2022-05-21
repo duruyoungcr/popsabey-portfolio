@@ -22,7 +22,7 @@
   @apply pt-4 hidden sm:block;
 }
 .socials {
-  @apply flex items-center gap-6 mt-6 sm:mt-0;
+  @apply flex items-center gap-6 sm:gap-0 mt-6 sm:mt-0;
 }
 
 .footer {

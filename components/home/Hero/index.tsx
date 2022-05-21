@@ -6,7 +6,7 @@ import Link from 'next/link'
 const Hero = () => {
     return (
         <section className={styles.container}>
-            <div className={styles.image} data-aos="fade-right">
+            <div className={styles.image} data-aos="fade-down">
                 <Image src={HeroImage} alt="Memoji Hi" width={445} height={445} placeholder='blur' />
             </div>
             <div className={styles.text}>

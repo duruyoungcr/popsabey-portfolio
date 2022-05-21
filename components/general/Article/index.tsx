@@ -14,7 +14,7 @@ const Article = ({ title, link }: ArticlePropTypes) => {
                 style={{
                     fontFamily: 'Inter, sans-serif',
                 }}
-                data-aos='fade-left'
+                data-aos='fade-up'
             >{title}
             </h6>
             <CustomLink href={link} text={'View article'} />

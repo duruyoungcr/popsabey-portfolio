@@ -36,7 +36,7 @@ const Header = ({ path, sectionId }: HeaderPropTypes) => {
         setToggle(!toggle)
     }
     return (
-        <motion.header className={styles.container}>
+        <header className={styles.container}>
             <div className='flex items-center'>
                 <Link href={'/'} passHref>
                     <motion.a
@@ -111,7 +111,7 @@ const Header = ({ path, sectionId }: HeaderPropTypes) => {
                 <HamburgerMenu toggle={toggle} handleToggle={handleToggle} />
                 {toggle && <MobileMenu path={path} handleToggle={handleToggle} sectionId={sectionId} />}
             </div>
-        </motion.header>
+        </header>
     )
 }
 
