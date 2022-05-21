@@ -25,7 +25,7 @@ const Layout = ({ children }: ChildrenProps) => {
         )
     }
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} hide-scrollbar`}>
             <Header path={path} sectionId={sectionId} />
             <main className={styles.main}>
                 {children}
