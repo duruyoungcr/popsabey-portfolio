@@ -6,7 +6,7 @@ import systemImage from '../../../public/assets/img/system/system-design.png'
 
 const SystemDesign = () => {
     return (
-        <section className={styles.container}>
+        <section className={styles.container} data-aos='fade-up'>
             <div className={styles.texts}>
                 <h4 className='text-blue hidden sm:block mb-20 text-2xl'>System Design</h4>
                 <CustomHeading

@@ -8,10 +8,9 @@ interface ProjectOutlinePropsTypes {
 
 const ProjectOutline = ({ year, role, platform, industry, duration }: ProjectOutlinePropsTypes) => {
     return (
-        <div className='rounded-lg bg-blue-darkest border border-blue-light text-white-darkest text-lg sm:max-w-[754px] min-w-max'>
+        <div data-aos='fade-up' data-aos-delay='400' className='rounded-lg bg-blue-darkest border border-blue-light text-white-darkest text-lg sm:max-w-[754px] min-w-max'>
             <div
                 className='sm:grid sm:grid-cols-3 flex items-center sm:items-start justify-between outline-max sm:max-w-[754px] sm:min-w-max gap-6 overflow-x-scroll hide-scrollbar pr-8 sm:pr-0 py-4 px-4'
-                data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="8"
             >
                 <div className='flex sm:flex-col gap-6'>
                     <div className='sm:mb-4 flex min-w-max'>

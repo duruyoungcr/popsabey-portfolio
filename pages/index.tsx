@@ -32,7 +32,7 @@ const Home: NextPage = (props) => {
     return <Loader />
   }
   return (
-    <div data-scroll-section>
+    <div>
       <SEO title="Popsabey | Product Designer" />
       <Layout>
         <Hero />

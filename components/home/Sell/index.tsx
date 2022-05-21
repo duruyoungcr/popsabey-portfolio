@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Sell = () => {
     return (
@@ -7,6 +6,7 @@ const Sell = () => {
             style={{
                 background: 'linear-gradient(180deg, #030732 0%, #010424 100%)',
             }}
+            data-aos="fade-up"
         >
             <p className='mb-8'>
                 You know how safe you feel with your money in the bank? That sense of security over your assets because they are insured? That is what good design does for you. Making you feel safe, good and secured when using things well designed.

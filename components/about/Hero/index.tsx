@@ -2,22 +2,20 @@ import Image from 'next/image'
 import styles from './Hero.module.css'
 import HeroImage from '../../../public/assets/img/memoji/hero.png'
 import Link from 'next/link'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Hero = () => {
-    const { scroll } = useLocomotiveScroll()
     return (
         <section className={styles.container}>
-            <div className={styles.image}>
+            <div className={styles.image} data-aos='fade-right'>
                 <Image src={HeroImage} alt="Memoji Hi" width={445} height={445} placeholder='blur' />
             </div>
             <div className={styles.text}>
-                <h1 className={styles.salute}>Hello, I am popsabey</h1>
+                <h1 className={styles.salute} data-aos='fade-down'>Hello, I am popsabey</h1>
                 <div className='max-w-[679px] font-[300] sm:text-lg mb-4 leading-9'>
-                    <p className='mb-4'>
+                    <p className='mb-4' data-aos='fade-up' data-aos-delay='100'>
                         I started off design after finishing Desktop Publishing training where I was fascinated with being able to import fine elements from programs like Instant Artist into CorelDraw 9 and creating color images with it, that is where my design journey began as I went ahead and I learnt Graphics Design professionally.
                     </p>
-                    <p>
+                    <p data-aos='fade-up' data-aos-delay='200'>
                         The idea that I can help people make better decisions, help businesses scale and make money, better people’s day to day lives through design is what drove me to Product Design as I found that it would put me at the forefront of solving problems with design.
                         I am a self-taught designer with an extra eye for users, consumers and product owners alike.
                     </p>

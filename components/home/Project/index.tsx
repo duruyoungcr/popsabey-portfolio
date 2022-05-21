@@ -19,6 +19,7 @@ const Project = ({ title, desc, slug, live, blurDataURL }: ProjectPropsTypes) =>
             style={{
                 background: "linear-gradient(180deg, #030732 66.27%, #010424 100%)"
             }}
+            data-aos='fade-up'
         >
             <div className={styles.imageContainer}>
                 <Image src={`${imageBasePath + slug}.png`} width={550} height={330} alt={title} placeholder='blur' blurDataURL={blurDataURL} />

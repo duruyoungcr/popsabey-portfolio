@@ -7,11 +7,13 @@ interface ExperiencePropsTypes {
     type: string,
     future: boolean,
     recent: boolean,
+    index: number
 }
 
-const Experience = ({ timeline, company, position, type, future, recent }: ExperiencePropsTypes) => {
+const Experience = ({ timeline, company, position, type, future, recent, index }: ExperiencePropsTypes) => {
     return (
         <div
+            data-aos='fade-up' data-aos-delay={index * 150}
             style={{
                 background: 'linear-gradient(180deg, #030732 0%, #010424 100%)',
             }}

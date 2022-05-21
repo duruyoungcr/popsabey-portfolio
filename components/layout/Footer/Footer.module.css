@@ -22,10 +22,16 @@
   @apply pt-4 hidden sm:block;
 }
 .socials {
-  @apply flex items-center mt-6 sm:mt-0;
+  @apply flex items-center gap-6 mt-6 sm:mt-0;
 }
 
 .footer {
   font-family: "Bebas Neue", cursive;
   @apply flex flex-col sm:flex-row sm:items-center justify-between border-t border-t-black-light py-[18px] px-5 sm:px-20 lg:px-[120px];
+}
+
+@media screen and (max-width: 345px) {
+  .socials {
+    @apply gap-2;
+  }
 }

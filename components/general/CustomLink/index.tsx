@@ -12,7 +12,7 @@ interface linkPropTypes {
 const CustomLink = ({ href, text }: linkPropTypes) => {
     return (
         <Link href={href}>
-            <a className={`${styles.link} group`}>
+            <a className={`${styles.link} group`} data-aos='fade-left'>
                 <p className="mr-8">{text}</p>
                 <div className='group-hover:visible'>
                     <Image src={ARROW} width={6} height={12} alt='arrow-right' />

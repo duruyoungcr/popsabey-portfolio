@@ -4,7 +4,7 @@ import styles from './Reviews.module.css'
 
 const Reviews = () => {
     return (
-        <section id='#reviews' className={styles.container}>
+        <section id='#reviews' className={styles.container} data-aos='fade-up'>
             <div className={styles.list}>
                 {reviews.map((review, index) => (
                     <Review

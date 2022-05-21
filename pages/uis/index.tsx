@@ -5,7 +5,7 @@ import UI from '../../components/UI'
 
 const UIPage: NextPage = (props) => {
     return (
-        <div data-scroll-section>
+        <div>
             <SEO title="UIS | Popsabey Portfolio" />
             <Layout>
                 <UI />

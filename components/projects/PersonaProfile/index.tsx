@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import styles from './PersonaProfile.module.css'
 
 const BASE_IMAGE_PATH = '/assets/img/projects/crypto-app/'
@@ -16,9 +15,8 @@ interface PersonaProfilePropsTypes {
 }
 
 const PersonaProfile = ({ name, age, gender, role, summary, challenges, imageName, inversed = false }: PersonaProfilePropsTypes) => {
-    const { scroll } = useLocomotiveScroll()
     return (
-        <div className='bg-blue-darkest rounded-2xl sm:max-h-[580px] flex flex-col sm:flex-row justify-between'>
+        <div data-aos='fade-up' data-aos-delay='100' className='bg-blue-darkest rounded-2xl sm:max-h-[580px] flex flex-col sm:flex-row justify-between'>
             <div className={`${inversed && 'sm:order-2'} ${styles.imageContainer}`}>
                 <Image src={BASE_IMAGE_PATH + imageName + '.png'} width={400} height={576} alt={'Person'} />
             </div>

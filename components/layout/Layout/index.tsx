@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import React, { useContext, useEffect, useState } from 'react'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import { LoadingContext } from '../../../context/LoadingContext'
 import Loader from '../../Loader'
 import Footer from '../Footer'
@@ -17,17 +16,9 @@ const Layout = ({ children }: ChildrenProps) => {
     const { loading } = useContext(LoadingContext)
     const router = useRouter();
     const sectionId = router.asPath.slice(router.asPath.indexOf('#')) || '';
-    const { scroll } = useLocomotiveScroll();
     useEffect(() => {
         setPath(router.pathname);
     }, [router.pathname]);
-    useEffect(() => {
-        scroll && scroll?.init()
-        return () => {
-            scroll & scroll?.destroy();
-        }
-    }, [scroll])
-
     if (loading) {
         return (
             <Loader />
