@@ -12,7 +12,7 @@ const Loader = () => {
                 className={styles.container}
             >
                 <div className={styles.loader}>
-                    <Image src={Loading} alt='popsabey' layout='fill' />
+                    <Image src={Loading} alt='popsabey' layout='fill' priority />
                 </div>
             </motion.div>
         </AnimatePresence>
