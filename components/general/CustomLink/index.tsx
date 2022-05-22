@@ -10,7 +10,7 @@ interface linkPropTypes {
 
 const CustomLink = ({ href, text }: linkPropTypes) => {
     return (
-        <Link href={href}>
+        <Link href={href} passHref>
             <a className={`${styles.link} group`} data-aos='fade-up'>
                 <p className="mr-8">{text}</p>
                 <div className='group-hover:visible'>

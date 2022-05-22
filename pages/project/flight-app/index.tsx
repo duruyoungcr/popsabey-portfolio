@@ -113,7 +113,7 @@ const FlightApp: NextPage = (props) => {
                             <div>
                                 <p className='mt-8' data-aos='fade-up'>
                                     SO I AM GOING TO SKIP TO THE CREATED SOLUTION HERE, IF YOU WOULD LIKE TO READ THE FULL RESEARCH(AND CASE STUDY), PLEASE FOLLOW THIS
-                                    <a href="https://medium.com/" className='text-blue'> LINK </a>
+                                    <a target='_blank' rel="noreferrer" href="https://medium.com/@popsabey.ux/flight-booking-and-reservation-app-post-covid-19-caa9fcbde618" className='text-blue'> LINK </a>
                                     THE TO MEDIUM CASE STUDY.
                                 </p>
                             </div>

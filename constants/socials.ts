@@ -24,7 +24,7 @@ const socials = [
         height: '12'
     },
     {
-        href: 'https://dribble.com/popsabey',
+        href: 'https://dribbble.com/popsabey',
         name: 'dribble',
         width: '24',
         height: '24'

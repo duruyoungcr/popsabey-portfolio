@@ -161,7 +161,7 @@ const SystemDesign: NextPage = (props) => {
                             We must continue to work on the system and the foundation to the team’s products to constantly adapt it to the brand’s direction.
                         </p>
                         <p className='mt-8' data-aos='fade-up' data-aos-delay='300'>
-                            This project only covers the internal collaboration part of a design system for the design team, none for the engineering team and none of the external users. We must ensure to make provision also for future collaborations, partnership and platform adoption plus usage. The work continues..
+                            There is a high consideration for storing most of the properties in this design system into tokens so as to be able to pass them along easily to engineering, the only hesitation is that property/styles/state are at a minimal level and the design system is serving only a single product as of yet...
                         </p>
                         <p className='mt-8 text-base xxl:text-lg' data-aos='fade-up' data-aos-delay='400'>
                             View public figma file <a className='text-blue underline' target='_blank' rel="noreferrer" href='http://figma.com'>here</a>
