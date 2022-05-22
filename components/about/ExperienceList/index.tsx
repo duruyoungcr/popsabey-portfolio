@@ -8,7 +8,7 @@ const ExperienceList = () => {
         <section className={styles.container}>
             <div className='flex mb-10 items-center'>
                 <CustomHeading text="EXPERIENCE" fontSize="text-2xl sm:text-3xl" marginBottom='mb-0' />
-                <a className='text-blue underline ml-4' data-aos='fade-up' data-aos-delay='200' href='https://'>
+                <a target='_blank' rel='noreferrer' className='text-blue underline ml-4' data-aos='fade-up' data-aos-delay='200' href='https://drive.google.com/file/d/10XmiB0NltPLWUelHytCHUEILZT6W6eUA/view?usp=drivesdk'>
                     Download Full Resume.pdf
                 </a>
             </div>
