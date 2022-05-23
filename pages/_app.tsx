@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       offset: -50,
     });
   }, [])
