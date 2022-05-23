@@ -24,7 +24,7 @@ const Experience = ({ timeline, company, position, type, future, recent, index }
                 <>
                     <p className='mb-2'>Exciting!</p>
                     <p className='font-medium text-xl mb-2'>************</p>
-                    <CustomLink href={'mailto:popsabey@gmail.com'} text='send a message' />
+                    <CustomLink href={'mailto:popsabey.ux@gmail.com'} text='send a message' />
                 </>
                 :
                 <>
