@@ -1,11 +1,19 @@
 const experiences = [
+       {
+        timeline: "March 2022 - Present",
+        company: "DressmakerGQ (Nigeria)",
+        position: "SENIOR PRODUCT DESIGNER",
+        type: "PRESENT",
+        future: false,
+        recent: false,
+    },
     {
         timeline: "May 2021 - Present",
         company: "FoodYours (Abuja, Nigeria)",
         position: "PRODUCT DESIGNER",
-        type: "PRESENT",
+        type: "Past",
         future: false,
-        recent: false,
+        recent: true,
     },
     {
         timeline: "Jan 2021 - May 2021(Contract)",
@@ -13,7 +21,7 @@ const experiences = [
         position: "PRODUCT DESIGNER",
         type: "Past",
         future: false,
-        recent: true,
+        recent: false,
     },
     {
         timeline: "Aug 2020 - Dec 2020",
